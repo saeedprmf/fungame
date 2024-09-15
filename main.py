@@ -78,7 +78,7 @@ def main_loop(enemies):
                 bullets.remove(b)
             for e in enemies:
                 if e[0]<H-1:
-                    if e[0] == (b[0] + H) and e[1] == b[1] and e[2] >-1:
+                    if e[0] == (b[0] + H) and e[1] == b[1]%W and e[2] >-1:
                         bullets.remove(b)
                         e[2] -= 1    
                 else:
